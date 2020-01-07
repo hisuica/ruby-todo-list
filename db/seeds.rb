@@ -19,6 +19,30 @@ Schedule.create!(
       severity: 'low',
       completed: 'false',
       user: hisuica
+    },
+    {
+      title: 'Second',
+      description: 'This is Second Schedule',
+      priority: 'high',
+      severity: 'low',
+      completed: 'false',
+      user: hisuica
+    },
+    {
+      title: 'Third',
+      description: 'This is Third Schedule',
+      priority: 'low',
+      severity: 'high',
+      completed: 'false',
+      user: hisuica
+    },
+    {
+      title: 'Fourth',
+      description: 'This is Fourth Schedule',
+      priority: 'high',
+      severity: 'high',
+      completed: 'true',
+      user: hisuica
     }
   ]
 )
