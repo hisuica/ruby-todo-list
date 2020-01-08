@@ -6,6 +6,10 @@
   "author": "Heesoo.Kim <jpz2384@linecorp.com>",
   "license": "MIT",
   "dependencies": {
+    "@types/jest": "^24.0.25",
+    "@types/node": "^13.1.4",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
     "apollo-cache-inmemory": "^1.6.5",
     "apollo-client": "^2.6.8",
     "apollo-link": "^1.2.13",
