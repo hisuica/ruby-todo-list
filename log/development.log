@@ -29534,3 +29534,53 @@ Processing by GraphqlController#execute as */*
 Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 3697)
 
 
+Started GET "/graphiql" for 127.0.0.1 at 2020-01-08 18:04:05 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql"}
+  Rendering /Users/JPZ2384/.rvm/rubies/ruby-2.6.5/lib/ruby/gems/2.6.0/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/JPZ2384/.rvm/rubies/ruby-2.6.5/lib/ruby/gems/2.6.0/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 245.3ms | Allocations: 287296)
+Completed 200 OK in 254ms (Views: 250.5ms | ActiveRecord: 0.0ms | Allocations: 289612)
+
+
+Started GET "/assets/graphiql/rails/application-6f03c7a92432765b0fbe671bfb7a292ee6c37e6704b6e6ac95587e45676bbf72.js" for 127.0.0.1 at 2020-01-08 18:04:05 +0900
+Started POST "/graphql" for 127.0.0.1 at 2020-01-08 18:04:06 +0900
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}}
+Completed 200 OK in 48ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 35426)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2020-01-08 18:04:09 +0900
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"{\n  user(id: 1){\n    id\n    username\n    email\n    schedules {\n      id\n      title\n      description\n      priority\n      severity\n      completed\n    }\n    schedulesCount\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"{\n  user(id: 1){\n    id\n    username\n    email\n    schedules {\n      id\n      title\n      description\n      priority\n      severity\n      completed\n    }\n    schedulesCount\n  }\n}", "variables"=>nil}}
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/graphql/types/query_type.rb:25:in `user'
+  [1m[36mSchedule Load (1.8ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 72ms (Views: 0.3ms | ActiveRecord: 29.1ms | Allocations: 19081)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-08 18:08:12 +0900
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScheduleController#index as HTML
+  Rendering schedule/index.html.erb
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/JPZ2384/RubymineProjects/ruby-todo-list/public/packs
+[Webpacker] Subprocess Debugger (ruby-debug-ide 0.8.0.beta19, debase 0.3.0.beta19, file filtering is supported, block breakpoints supported, smart steps supported, obtaining return values supported, partial obtaining of instance variables supported) listens on 0.0.0.0:59824
+warning package.json: No license field
+
+[Webpacker] Hash: 43ad37ef31c1f623cb03
+Version: webpack 4.41.5
+Time: 890ms
+Built at: 2020/01/08 18:08:15
+                               Asset       Size  Chunks                         Chunk Names
+    js/index-e10617c1f36f28709f9a.js   3.88 KiB   index  [emitted] [immutable]  index
+js/index-e10617c1f36f28709f9a.js.map   3.59 KiB   index  [emitted] [dev]        index
+                       manifest.json  322 bytes          [emitted]              
+Entrypoint index = js/index-e10617c1f36f28709f9a.js js/index-e10617c1f36f28709f9a.js.map
+[./app/javascript/packs/index.js] 20 bytes {index} [built]
+
+  Rendered schedule/index.html.erb (Duration: 3147.7ms | Allocations: 2188)
+Completed 200 OK in 3155ms (Views: 3151.6ms | ActiveRecord: 0.0ms | Allocations: 3487)
+
+
