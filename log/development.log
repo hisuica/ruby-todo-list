@@ -29739,3 +29739,599 @@ Processing by ScheduleController#index as HTML
 Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 2781)
 
 
+Started GET "/" for 127.0.0.1 at 2020-01-09 15:42:58 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScheduleController#index as HTML
+  Rendering schedule/index.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered schedule/index.html.erb (Duration: 9.1ms | Allocations: 1482)
+Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 2780)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-09 15:46:06 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScheduleController#index as HTML
+Completed 406 Not Acceptable in 5ms (ActiveRecord: 0.0ms | Allocations: 1977)
+
+
+  
+ActionController::MissingExactTemplate (ScheduleController#index is missing a template for request formats: text/html):
+  
+actionpack (6.0.2.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.2.1) lib/abstract_controller/base.rb:196:in `process_action'
+actionpack (6.0.2.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.2.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.2.1) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.2.1) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.2.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.2.1) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.2.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.2.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.2.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.2.1) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.2.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.2.1) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.2.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.2.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2.1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.8) lib/rack/etag.rb:25:in `call'
+rack (2.0.8) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.8) lib/rack/head.rb:12:in `call'
+activerecord (6.0.2.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-01-09 15:46:13 +0900
+Processing by ScheduleController#index as HTML
+Completed 406 Not Acceptable in 0ms (ActiveRecord: 0.0ms | Allocations: 169)
+
+
+  
+ActionController::MissingExactTemplate (ScheduleController#index is missing a template for request formats: text/html):
+  
+actionpack (6.0.2.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.2.1) lib/abstract_controller/base.rb:196:in `process_action'
+actionpack (6.0.2.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.2.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.2.1) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.2.1) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.2.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.2.1) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.2.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.2.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.2.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.2.1) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.2.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.2.1) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.2.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.2.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2.1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.8) lib/rack/etag.rb:25:in `call'
+rack (2.0.8) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.8) lib/rack/head.rb:12:in `call'
+activerecord (6.0.2.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-01-09 15:47:11 +0900
+Processing by ScheduleController#index as HTML
+  Rendering schedule/index.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered schedule/index.html.erb (Duration: 9.9ms | Allocations: 1337)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 1893)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-09 15:57:30 +0900
+Processing by ScheduleController#index as HTML
+  Rendering schedule/index.html.erb
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.19.1
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+Subprocess Debugger (ruby-debug-ide 0.8.0.beta19, debase 0.3.0.beta19, file filtering is supported, block breakpoints supported, smart steps supported, obtaining return values supported, partial obtaining of instance variables supported) listens on 0.0.0.0:65362
+warning ../../package.json: No license field
+warning ../../package.json: No license field
+error Command "webpack" not found.
+
+  Rendered schedule/index.html.erb (Duration: 1503.3ms | Allocations: 2147)
+Completed 200 OK in 1504ms (Views: 1504.0ms | ActiveRecord: 0.0ms | Allocations: 2357)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-09 15:57:46 +0900
+Processing by ScheduleController#index as HTML
+  Rendering schedule/index.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered schedule/index.html.erb (Duration: 5.2ms | Allocations: 1217)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 1421)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-09 16:00:02 +0900
+Processing by ScheduleController#index as HTML
+  Rendering schedule/index.html.erb
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.19.1
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+Subprocess Debugger (ruby-debug-ide 0.8.0.beta19, debase 0.3.0.beta19, file filtering is supported, block breakpoints supported, smart steps supported, obtaining return values supported, partial obtaining of instance variables supported) listens on 0.0.0.0:49648
+warning ../../package.json: No license field
+warning ../../package.json: No license field
+error Command "webpack" not found.
+
+Started GET "/" for 127.0.0.1 at 2020-01-09 16:00:03 +0900
+  Rendered schedule/index.html.erb (Duration: 1397.3ms | Allocations: 2910)
+Completed 200 OK in 1398ms (Views: 1397.8ms | ActiveRecord: 0.0ms | Allocations: 3114)
+
+
+Processing by ScheduleController#index as HTML
+  Rendering schedule/index.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered schedule/index.html.erb (Duration: 4.5ms | Allocations: 1217)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 1421)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-09 16:00:04 +0900
+Processing by ScheduleController#index as HTML
+  Rendering schedule/index.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered schedule/index.html.erb (Duration: 3.4ms | Allocations: 1217)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 1421)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-09 16:00:05 +0900
+Processing by ScheduleController#index as HTML
+  Rendering schedule/index.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered schedule/index.html.erb (Duration: 4.0ms | Allocations: 1217)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 1421)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-09 16:07:16 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScheduleController#index as HTML
+  Rendering schedule/index.html.erb
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.19.1
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+Subprocess Debugger (ruby-debug-ide 0.8.0.beta19, debase 0.3.0.beta19, file filtering is supported, block breakpoints supported, smart steps supported, obtaining return values supported, partial obtaining of instance variables supported) listens on 0.0.0.0:51552
+warning ../../package.json: No license field
+warning ../../package.json: No license field
+error Command "webpack" not found.
+
+  Rendered schedule/index.html.erb (Duration: 1286.5ms | Allocations: 2422)
+Completed 200 OK in 1296ms (Views: 1291.4ms | ActiveRecord: 0.0ms | Allocations: 3720)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-09 16:07:22 +0900
+Processing by ScheduleController#index as HTML
+  Rendering schedule/index.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered schedule/index.html.erb (Duration: 5.0ms | Allocations: 1218)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 1425)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-09 16:07:30 +0900
+Processing by ScheduleController#index as HTML
+  Rendering schedule/index.html.erb
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.19.1
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+Subprocess Debugger (ruby-debug-ide 0.8.0.beta19, debase 0.3.0.beta19, file filtering is supported, block breakpoints supported, smart steps supported, obtaining return values supported, partial obtaining of instance variables supported) listens on 0.0.0.0:51637
+warning ../../package.json: No license field
+warning ../../package.json: No license field
+error Command "webpack" not found.
+
+  Rendered schedule/index.html.erb (Duration: 1200.4ms | Allocations: 2111)
+Completed 200 OK in 1201ms (Views: 1200.9ms | ActiveRecord: 0.0ms | Allocations: 2315)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-09 16:07:32 +0900
+Processing by ScheduleController#index as HTML
+  Rendering schedule/index.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered schedule/index.html.erb (Duration: 6.1ms | Allocations: 1432)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 1905)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-09 16:08:14 +0900
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScheduleController#index as HTML
+  Rendering schedule/index.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered schedule/index.html.erb (Duration: 11.4ms | Allocations: 1494)
+Completed 200 OK in 20ms (Views: 16.4ms | ActiveRecord: 0.0ms | Allocations: 2792)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-09 16:14:30 +0900
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScheduleController#index as HTML
+  Rendering schedule/index.html.erb
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.19.1
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+Subprocess Debugger (ruby-debug-ide 0.8.0.beta19, debase 0.3.0.beta19, file filtering is supported, block breakpoints supported, smart steps supported, obtaining return values supported, partial obtaining of instance variables supported) listens on 0.0.0.0:53361
+warning ../../package.json: No license field
+warning ../../package.json: No license field
+error Command "webpack" not found.
+
+  Rendered schedule/index.html.erb (Duration: 1246.2ms | Allocations: 2421)
+Completed 200 OK in 1255ms (Views: 1250.9ms | ActiveRecord: 0.0ms | Allocations: 3719)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-09 16:20:24 +0900
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScheduleController#index as HTML
+  Rendering schedule/index.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered schedule/index.html.erb (Duration: 9.3ms | Allocations: 1494)
+Completed 200 OK in 19ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 2792)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-09 16:20:27 +0900
+Processing by ScheduleController#index as HTML
+  Rendering schedule/index.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered schedule/index.html.erb (Duration: 6.3ms | Allocations: 1218)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 1425)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-09 16:21:10 +0900
+Processing by ScheduleController#index as HTML
+  Rendering schedule/index.html.erb
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/JPZ2384/RubymineProjects/ruby-todo-list/public/packs
+[Webpacker] Subprocess Debugger (ruby-debug-ide 0.8.0.beta19, debase 0.3.0.beta19, file filtering is supported, block breakpoints supported, smart steps supported, obtaining return values supported, partial obtaining of instance variables supported) listens on 0.0.0.0:55116
+warning ../../package.json: No license field
+
+[Webpacker] Hash: fa859612fe9c5bb7cbb0
+Version: webpack 4.41.5
+Time: 8500ms
+Built at: 2020/01/09 16:21:20
+                               Asset       Size  Chunks                         Chunk Names
+    js/index-215b5d0da65e5cfe37d9.js   1.83 MiB   index  [emitted] [immutable]  index
+js/index-215b5d0da65e5cfe37d9.js.map   2.03 MiB   index  [emitted] [dev]        index
+                       manifest.json  322 bytes          [emitted]              
+Entrypoint index = js/index-215b5d0da65e5cfe37d9.js js/index-215b5d0da65e5cfe37d9.js.map
+[../../node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {index} [built]
+[../../node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {index} [built]
+[./app/javascript/packs/index.tsx] 348 bytes {index} [built]
+[./app/javascript/utils/apollo.ts] 5.01 KiB {index} [built]
+    + 69 hidden modules
+
+  Rendered schedule/index.html.erb (Duration: 10407.9ms | Allocations: 2311)
+Completed 200 OK in 10409ms (Views: 10408.3ms | ActiveRecord: 0.0ms | Allocations: 2517)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-09 16:27:02 +0900
+Processing by ScheduleController#index as HTML
+  Rendering schedule/index.html.erb
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/JPZ2384/RubymineProjects/ruby-todo-list/public/packs
+[Webpacker] Subprocess Debugger (ruby-debug-ide 0.8.0.beta19, debase 0.3.0.beta19, file filtering is supported, block breakpoints supported, smart steps supported, obtaining return values supported, partial obtaining of instance variables supported) listens on 0.0.0.0:56641
+warning ../../package.json: No license field
+
+[Webpacker] Hash: 8e2f4d6556f5878a6ceb
+Version: webpack 4.41.5
+Time: 5292ms
+Built at: 2020/01/09 16:27:09
+                               Asset       Size  Chunks                         Chunk Names
+    js/index-5add4bed51f56e5861b4.js   1.83 MiB   index  [emitted] [immutable]  index
+js/index-5add4bed51f56e5861b4.js.map   2.03 MiB   index  [emitted] [dev]        index
+                       manifest.json  322 bytes          [emitted]              
+Entrypoint index = js/index-5add4bed51f56e5861b4.js js/index-5add4bed51f56e5861b4.js.map
+[../../node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {index} [built]
+[../../node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {index} [built]
+[./app/javascript/packs/index.tsx] 348 bytes {index} [built]
+[./app/javascript/utils/apollo.ts] 5.01 KiB {index} [built]
+    + 69 hidden modules
+
+  Rendered schedule/index.html.erb (Duration: 7543.4ms | Allocations: 2262)
+Completed 200 OK in 7544ms (Views: 7544.0ms | ActiveRecord: 0.0ms | Allocations: 2468)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-09 16:27:36 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScheduleController#index as HTML
+  Rendering schedule/index.html.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered schedule/index.html.erb (Duration: 7.3ms | Allocations: 1495)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 2793)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-09 16:27:45 +0900
+Processing by ScheduleController#index as HTML
+  Rendering schedule/index.html.erb
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/JPZ2384/RubymineProjects/ruby-todo-list/public/packs
+[Webpacker] Subprocess Debugger (ruby-debug-ide 0.8.0.beta19, debase 0.3.0.beta19, file filtering is supported, block breakpoints supported, smart steps supported, obtaining return values supported, partial obtaining of instance variables supported) listens on 0.0.0.0:56841
+warning ../../package.json: No license field
+
+[Webpacker] Hash: fa859612fe9c5bb7cbb0
+Version: webpack 4.41.5
+Time: 4807ms
+Built at: 2020/01/09 16:27:51
+                               Asset       Size  Chunks                         Chunk Names
+    js/index-215b5d0da65e5cfe37d9.js   1.83 MiB   index  [emitted] [immutable]  index
+js/index-215b5d0da65e5cfe37d9.js.map   2.03 MiB   index  [emitted] [dev]        index
+                       manifest.json  322 bytes          [emitted]              
+Entrypoint index = js/index-215b5d0da65e5cfe37d9.js js/index-215b5d0da65e5cfe37d9.js.map
+[../../node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {index} [built]
+[../../node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {index} [built]
+[./app/javascript/packs/index.tsx] 348 bytes {index} [built]
+[./app/javascript/utils/apollo.ts] 5.01 KiB {index} [built]
+    + 69 hidden modules
+
+  Rendered schedule/index.html.erb (Duration: 6638.8ms | Allocations: 2282)
+Completed 200 OK in 6640ms (Views: 6639.4ms | ActiveRecord: 0.0ms | Allocations: 2489)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-09 16:31:03 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScheduleController#index as HTML
+  Rendering schedule/index.html.erb
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/JPZ2384/RubymineProjects/ruby-todo-list/public/packs
+[Webpacker] Subprocess Debugger (ruby-debug-ide 0.8.0.beta19, debase 0.3.0.beta19, file filtering is supported, block breakpoints supported, smart steps supported, obtaining return values supported, partial obtaining of instance variables supported) listens on 0.0.0.0:57716
+warning ../../package.json: No license field
+
+[Webpacker] Hash: 07d0dafe70c685955c8a
+Version: webpack 4.41.5
+Time: 4850ms
+Built at: 2020/01/09 16:31:10
+                               Asset       Size  Chunks                         Chunk Names
+    js/index-1ae2b3a99eaeaf66d1db.js   1.84 MiB   index  [emitted] [immutable]  index
+js/index-1ae2b3a99eaeaf66d1db.js.map   2.03 MiB   index  [emitted] [dev]        index
+                       manifest.json  322 bytes          [emitted]              
+Entrypoint index = js/index-1ae2b3a99eaeaf66d1db.js js/index-1ae2b3a99eaeaf66d1db.js.map
+[../../node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {index} [built]
+[../../node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {index} [built]
+[./app/javascript/packs/index.tsx] 348 bytes {index} [built]
+[./app/javascript/utils/apollo.ts] 5.01 KiB {index} [built]
+    + 70 hidden modules
+
+  Rendered schedule/index.html.erb (Duration: 6671.9ms | Allocations: 2559)
+Completed 200 OK in 6679ms (Views: 6676.1ms | ActiveRecord: 0.0ms | Allocations: 3857)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-09 16:31:52 +0900
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScheduleController#index as HTML
+  Rendering schedule/index.html.erb
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/JPZ2384/RubymineProjects/ruby-todo-list/public/packs
+[Webpacker] Subprocess Debugger (ruby-debug-ide 0.8.0.beta19, debase 0.3.0.beta19, file filtering is supported, block breakpoints supported, smart steps supported, obtaining return values supported, partial obtaining of instance variables supported) listens on 0.0.0.0:57941
+warning ../../package.json: No license field
+
+[Webpacker] Hash: 07d0dafe70c685955c8a
+Version: webpack 4.41.5
+Time: 5331ms
+Built at: 2020/01/09 16:31:59
+                               Asset       Size  Chunks                         Chunk Names
+    js/index-1ae2b3a99eaeaf66d1db.js   1.84 MiB   index  [emitted] [immutable]  index
+js/index-1ae2b3a99eaeaf66d1db.js.map   2.03 MiB   index  [emitted] [dev]        index
+                       manifest.json  322 bytes          [emitted]              
+Entrypoint index = js/index-1ae2b3a99eaeaf66d1db.js js/index-1ae2b3a99eaeaf66d1db.js.map
+[../../node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {index} [built]
+[../../node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {index} [built]
+[./app/javascript/packs/index.tsx] 348 bytes {index} [built]
+[./app/javascript/utils/apollo.ts] 5.01 KiB {index} [built]
+    + 70 hidden modules
+
+  Rendered schedule/index.html.erb (Duration: 7255.1ms | Allocations: 2562)
+Completed 200 OK in 7265ms (Views: 7261.2ms | ActiveRecord: 0.0ms | Allocations: 3860)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-09 16:34:24 +0900
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScheduleController#index as HTML
+  Rendering schedule/index.html.erb
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/JPZ2384/RubymineProjects/ruby-todo-list/public/packs
+[Webpacker] Subprocess Debugger (ruby-debug-ide 0.8.0.beta19, debase 0.3.0.beta19, file filtering is supported, block breakpoints supported, smart steps supported, obtaining return values supported, partial obtaining of instance variables supported) listens on 0.0.0.0:58618
+warning ../../package.json: No license field
+
+[Webpacker] Hash: 07d0dafe70c685955c8a
+Version: webpack 4.41.5
+Time: 4890ms
+Built at: 2020/01/09 16:34:31
+                               Asset       Size  Chunks                         Chunk Names
+    js/index-1ae2b3a99eaeaf66d1db.js   1.84 MiB   index  [emitted] [immutable]  index
+js/index-1ae2b3a99eaeaf66d1db.js.map   2.03 MiB   index  [emitted] [dev]        index
+                       manifest.json  322 bytes          [emitted]              
+Entrypoint index = js/index-1ae2b3a99eaeaf66d1db.js js/index-1ae2b3a99eaeaf66d1db.js.map
+[../../node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {index} [built]
+[../../node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {index} [built]
+[./app/javascript/packs/index.tsx] 348 bytes {index} [built]
+[./app/javascript/utils/apollo.ts] 5.01 KiB {index} [built]
+    + 70 hidden modules
+
+  Rendered schedule/index.html.erb (Duration: 7033.0ms | Allocations: 2561)
+Completed 200 OK in 7043ms (Views: 7038.4ms | ActiveRecord: 0.0ms | Allocations: 3859)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-09 16:51:27 +0900
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScheduleController#index as HTML
+  Rendering schedule/index.html.erb
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/JPZ2384/RubymineProjects/ruby-todo-list/public/packs
+[Webpacker] Subprocess Debugger (ruby-debug-ide 0.8.0.beta19, debase 0.3.0.beta19, file filtering is supported, block breakpoints supported, smart steps supported, obtaining return values supported, partial obtaining of instance variables supported) listens on 0.0.0.0:62979
+warning ../../package.json: No license field
+
+[Webpacker] Hash: 8715694c2bfd954f8b6d
+Version: webpack 4.41.5
+Time: 5361ms
+Built at: 2020/01/09 16:51:35
+                               Asset       Size  Chunks                         Chunk Names
+    js/index-6fea1096acf6e345c073.js   1.84 MiB   index  [emitted] [immutable]  index
+js/index-6fea1096acf6e345c073.js.map   2.03 MiB   index  [emitted] [dev]        index
+                       manifest.json  322 bytes          [emitted]              
+Entrypoint index = js/index-6fea1096acf6e345c073.js js/index-6fea1096acf6e345c073.js.map
+[../../node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {index} [built]
+[../../node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {index} [built]
+[./app/javascript/packs/index.tsx] 348 bytes {index} [built]
+[./app/javascript/utils/apollo.ts] 5.03 KiB {index} [built]
+    + 70 hidden modules
+
+  Rendered schedule/index.html.erb (Duration: 7431.8ms | Allocations: 2567)
+Completed 200 OK in 7441ms (Views: 7436.8ms | ActiveRecord: 0.0ms | Allocations: 3865)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2020-01-09 16:51:35 +0900
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  schedules {\n    id\n    title\n    description\n    user {\n      email\n      __typename\n    }\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  schedules {\n    id\n    title\n    description\n    user {\n      email\n      __typename\n    }\n    __typename\n  }\n}\n"}}
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 11021)
+
+
+Started GET "/graphiql" for 127.0.0.1 at 2020-01-09 16:55:06 +0900
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql"}
+  Rendering /Users/JPZ2384/.rvm/rubies/ruby-2.6.5/lib/ruby/gems/2.6.0/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/JPZ2384/.rvm/rubies/ruby-2.6.5/lib/ruby/gems/2.6.0/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 1.7ms | Allocations: 473)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 2038)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2020-01-09 16:55:07 +0900
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}}
+Completed 200 OK in 40ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 25312)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2020-01-09 16:55:10 +0900
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"{\n  user(id: 1){\n    id\n    username\n    email\n    schedules {\n      id\n      title\n      description\n      priority\n      severity\n      completed\n    }\n    schedulesCount\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"{\n  user(id: 1){\n    id\n    username\n    email\n    schedules {\n      id\n      title\n      description\n      priority\n      severity\n      completed\n    }\n    schedulesCount\n  }\n}", "variables"=>nil}}
+  [1m[36mUser Load (6.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/graphql/types/query_type.rb:25:in `user'
+  [1m[36mSchedule Load (2.7ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules" WHERE "schedules"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 86ms (Views: 0.4ms | ActiveRecord: 32.3ms | Allocations: 19044)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2020-01-09 16:55:23 +0900
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"{\n  schedules{\n    id\n    title\n    description\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"{\n  schedules{\n    id\n    title\n    description\n  }\n}", "variables"=>nil}}
+  [1m[36mSchedule Load (0.3ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules"[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 2114)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-09 16:56:28 +0900
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ScheduleController#index as HTML
+  Rendering schedule/index.html.erb
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/JPZ2384/RubymineProjects/ruby-todo-list/public/packs
+[Webpacker] Subprocess Debugger (ruby-debug-ide 0.8.0.beta19, debase 0.3.0.beta19, file filtering is supported, block breakpoints supported, smart steps supported, obtaining return values supported, partial obtaining of instance variables supported) listens on 0.0.0.0:64259
+warning ../../package.json: No license field
+
+[Webpacker] Hash: 1c9f5cf5c42aee5fdec7
+Version: webpack 4.41.5
+Time: 4980ms
+Built at: 2020/01/09 16:56:35
+                               Asset       Size  Chunks                         Chunk Names
+    js/index-600fbefad5a08ca17738.js   1.84 MiB   index  [emitted] [immutable]  index
+js/index-600fbefad5a08ca17738.js.map   2.03 MiB   index  [emitted] [dev]        index
+                       manifest.json  322 bytes          [emitted]              
+Entrypoint index = js/index-600fbefad5a08ca17738.js js/index-600fbefad5a08ca17738.js.map
+[../../node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {index} [built]
+[../../node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {index} [built]
+[./app/javascript/packs/index.tsx] 348 bytes {index} [built]
+[./app/javascript/utils/apollo.ts] 5.03 KiB {index} [built]
+    + 70 hidden modules
+
+  Rendered schedule/index.html.erb (Duration: 6901.6ms | Allocations: 2563)
+Completed 200 OK in 6911ms (Views: 6906.5ms | ActiveRecord: 0.0ms | Allocations: 3861)
+
+
+Started POST "/graphql" for 127.0.0.1 at 2020-01-09 16:56:35 +0900
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  schedules {\n    id\n    title\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  schedules {\n    id\n    title\n    description\n    __typename\n  }\n}\n"}}
+  [1m[36mSchedule Load (1.1ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules"[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 48ms (Views: 0.4ms | ActiveRecord: 6.4ms | Allocations: 20298)
+
+

@@ -1,4 +1,4 @@
-import { ApolloClient } from "apollo-client";
+import { ApolloClient, NormalizedCacheObject } from "apollo-boost";
 import { InMemoryCache } from "apollo-cache-inmemory";
 import { HttpLink } from "apollo-link-http";
 import { onError } from "apollo-link-error";
@@ -6,11 +6,12 @@ import { ApolloLink, Observable } from "apollo-link";
 
 export const createCache = () => {
   const cache = new InMemoryCache();
+  return cache;
 };
 
 // getToken from meta tags
 const getToken = () =>
-  document.querySelector('meta[name="csrf-token"]').getAttribute("content");
+  document.querySelector('meta[name="csrf-token"]')?.getAttribute("content");
 const token = getToken();
 const setTokenForOperation = async operation =>
   operation.setContext({
@@ -63,7 +64,7 @@ const createHttpLink = () =>
     credentials: "include"
   });
 
-export const createClient = (cache, requestLink?): ApolloClient<InMemoryCache> => {
+export const createClient = (cache, requestLink?): ApolloClient<NormalizedCacheObject> => {
   return new ApolloClient({
     link: ApolloLink.from([
       createErrorLink(),
